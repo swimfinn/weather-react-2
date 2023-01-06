@@ -3,17 +3,30 @@ body {
 }
 
 .card {
-  width: 510px;
-  height: 225px;
+  width: 520px;
+  height: 250px;
   padding: 15px auto;
   margin: 0px 20px 0px 20px;
   display: center;
+  background-color: #343344;
+  border-color: #2c2a38;
+  border-width: 10px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
 }
 
 .form-control {
   height: 38px;
   width: 270px;
-  border-color: gray;
+  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
+  background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  background-color: #343344;
+  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
 }
 
 .search-button {
@@ -31,5 +44,13 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 20%;
-  background-color: #218838;
+}
+
+h1,
+li,
+b,
+span {
+  background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

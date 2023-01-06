@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className="card" style={{ borderRadius: `10px` }}>
+    <div className="card">
       <div className="card-body">
         <App />
       </div>

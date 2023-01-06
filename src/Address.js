@@ -5,7 +5,7 @@ export default function Adress() {
     return (
         <div className="Address">
             <a href="https://github.com/swimfinn/weather-react-2.git">GitHub Open-Sourced Code </a>
-            by Eileen Finn
+            <span>by Eileen Finn</span>
         </div>
     )
 }

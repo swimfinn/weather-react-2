@@ -8,11 +8,11 @@ export default function SearchEngine() {
                 <input type="text" className="form-control shadow-sm"
                     autofocus="on" placeholder="Type a city..." />
                 <button type="button"
-                    className="search-button btn btn-primary shadow-sm"><b>
+                    className="search-button btn shadow-sm"><b>
                         Search
                 </b>
                 </button>
-                <button type="button" className="current-button btn btn-success">
+                <button type="button" className="current-button btn">
                     <b>
                         Current
                 </b>
