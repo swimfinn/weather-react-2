@@ -37,7 +37,7 @@ li {
 .units {
   font-size: 64px;
   position: relative;
-  top: -220px;
+  top: -225px;
 }
 
 .temp {
@@ -53,4 +53,9 @@ li {
   position: relative;
   top: -290px;
   right: -272px;
+}
+
+.Address {
+  position: relative;
+  top: -290px;
 }
