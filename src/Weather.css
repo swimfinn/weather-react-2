@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+}
+
+li {
+  list-style-type: none;
+  color: grey;
+}
+
+.cityInfo {
+  font-size: 24px;
+  position: relative;
+  top: -38px;
+  color: grey;
+}
+
+.dateInfo {
+  position: relative;
+  top: -45px;
+  left: -40px;
+}
+
+.descriptionInfo {
+  position: relative;
+  top: -45px;
+  left: -40px;
+}
+
+.weather-img {
+  position: relative;
+  width: 150px;
+  bottom: 170px;
+  right: -300px;
+}
+
+.temp,
+.units {
+  font-size: 64px;
+  position: relative;
+  top: -220px;
+}
+
+.temp {
+  font-weight: 900px;
+}
+
+.units {
+  font-size: 24px;
+  top: -245px;
+}
+
+.otherInfo {
+  position: relative;
+  top: -290px;
+  right: -272px;
+}

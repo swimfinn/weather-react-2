@@ -1,67 +1,52 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+import "./App.css";
+import "./Weather.css";
 
 export default function Weather() {
-    let [city, setCity] = useState(null);
-    let [loaded, setLoaded] = useState(false);
-    let [weather, setWeather] = useState("null");
+    let weatherInfo = {
+        city: "Wenatchee",
+        date: "Saturday, 7:12 p.m.",
+        description: "Sunny",
+        imgUrl: "http://openweathermap.org/img/wn/01d@2x.png",
+        humidity: 23,
+        wind: 5,
+        temperature: 78
+    };
 
-    function displayWeather(response) {
-        setLoaded(true);
-        setWeather({
-            temperature: response.data.main.temp,
-            humidity: response.data.main.humidity,
-            wind: response.data.wind.speed,
-            description: response.data.weather[0].description,
-            icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-        });
-    }
-
-    function handleSubmit(event) {
-        event.preventDefault();
-        let apiKey = "3a8d7f059fc61ac00591426445cb607a";
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-        axios.get(url).then(displayWeather);
-    }
-
-    function updateCity(event) {
-        setCity(event.target.value);
-    }
-
-    let form = (
-        <div class="searchEngine mb-3">
-            <form onSubmit={handleSubmit} className="search-bar">
-                <input type="text" className="form-control shadow-sm"
-                    autofocus="on" onChange={updateCity} placeholder="Type a city..." />
-                <button type="button"
-                    className="search-button btn btn-primary shadow-sm"><b>
-                        Search
-                </b>
-                </button>
-                <button type="button" className="current-button btn btn-success">
-                    <b>
-                        Current
-                </b>
-                </button>
-            </form>
+    return (
+        <div className="weatherInfo">
+            <h1 className="cityInfo">{weatherInfo.city}</h1>
+            <ul>
+                <li className="dateInfo">
+                    {weatherInfo.date}
+                </li>
+                <li className="descriptionInfo">
+                    {weatherInfo.description}
+                </li>
+            </ul>
+            <div className="row">
+                <div className="col-6">
+                    <img
+                        src={weatherInfo.imgUrl}
+                        alt={weatherInfo.description}
+                        className="weather-img"
+                    />
+                    <span className="temp">{weatherInfo.temperature}</span>
+                    <span className="units">°F</span>
+                </div>
+            </div>
+            <div className="col-6">
+                <div className="otherInfo">
+                    <ul>
+                        <li>
+                            Humidity: {weatherInfo.humidity}%
+                    </li>
+                        <li>
+                            Wind: {weatherInfo.wind} mph
+                    </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
-    if (loaded) {
-        return (
-            <div>
-                {form}
-                <ul>
-                    <li>Temperature: {Math.round(weather.temperature)}°F</li>
-                    <li>Description: {weather.description}</li>
-                    <li>Humidity: {weather.humidity}%</li>
-                    <li>Wind: {weather.wind}mph</li>
-                    <li>
-                        <img src={weather.icon} alt={weather.descriptoin} />{" "}
-                    </li>
-                </ul>
-            </div>
-        );
-    } else {
-        return form;
-    }
 }
