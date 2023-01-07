@@ -7,5 +7,5 @@ export default function Adress() {
             <a href="https://github.com/swimfinn/weather-react-2.git">GitHub Open-Sourced Code </a>
             <span>by Eileen Finn</span>
         </div>
-    )
+    );
 }
