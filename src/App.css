@@ -10,8 +10,8 @@ img {
 }
 
 .card {
-  width: 550px;
-  height: 400px;
+  width: 570px;
+  height: 430px;
   padding: 15px auto;
   margin: 0px 20px 0px 20px;
   display: center;
@@ -23,7 +23,7 @@ img {
 
 .form-control {
   height: 38px;
-  width: 270px;
+  width: 300px;
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
   background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
   -webkit-background-clip: text;
@@ -37,7 +37,7 @@ img {
 
 .search-button {
   position: relative;
-  left: 275px;
+  left: 300px;
   top: -38px;
   padding-left: 15px;
   padding-right: 15px;
@@ -45,7 +45,7 @@ img {
 }
 .current-button {
   position: relative;
-  right: -280px;
+  right: -305px;
   top: -38px;
   padding-left: 15px;
   padding-right: 15px;

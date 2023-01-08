@@ -1,13 +1,15 @@
 .Days {
+  font-size: 14px;
   position: relative;
-  top: -160px;
-  left: -50px;
+  top: -165px;
+  left: -45px;
+  text-align: center;
 }
 
 .forecast-img {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-bottom: 20px;
 }

@@ -24,35 +24,40 @@ export default function Forecast() {
                         src={forecastIcon.fog}
                         alt="fog"
                         className="forecast-img" /></span></li><li><span>Monday</span></li>
-                        <li><span class="p-3">12°</span></li></ul></div>
+                        <li><span class="p-3">12°</span></li>
+                        <li><span>Foggy</span></li></ul></div>
 
                     <div class="p-0"><ul><li><img
                         src={forecastIcon.partiallySunny}
                         alt="partiallySunny"
                         className="forecast-img"
                     /></li><li><span>Tuesday</span></li>
-                        <li><span class="p-3">20°</span></li></ul></div>
+                        <li><span class="p-3">20°</span></li>
+                        <li><span>Partly</span></li></ul></div>
 
                     <div class="p-0"><ul><li><img
                         src={forecastIcon.rain}
                         alt="rain"
                         className="forecast-img"
                     /></li><li><span>Wednesday</span></li>
-                        <li><span class="p-3">20°</span></li></ul></div>
+                        <li><span class="p-3">20°</span></li>
+                        <li><span>Rainy</span></li></ul></div>
 
                     <div class="p-0"><ul><li><img
                         src={forecastIcon.snow}
                         alt="snow"
                         className="forecast-img"
                     /></li><li><span>Thursday</span></li>
-                        <li><span class="p-3">15°</span></li></ul></div>
+                        <li><span class="p-3">15°</span></li>
+                        <li><span>Snowy</span></li></ul></div>
 
                     <div class="p-0"><ul><li><img
                         src={forecastIcon.sleet}
                         alt="sleet"
                         className="forecast-img"
                     /></li><li><span>Friday</span></li>
-                        <li><span class="p-3">11°</span></li></ul></div>
+                        <li><span class="p-3">11°</span></li><li>
+                            <span>Sleet</span></li></ul></div>
 
 
                 </div >
