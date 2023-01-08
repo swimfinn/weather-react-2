@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
 import "./Weather.css";
+import Sunny from "./images/sunny.jpg"
 
 export default function Weather() {
     let weatherInfo = {
         city: "Wenatchee",
         date: "Saturday, 7:12 p.m.",
         description: "Sunny",
-        imgUrl: "http://openweathermap.org/img/wn/01d@2x.png",
+        imgUrl: (Sunny),
         humidity: 23,
         wind: 5,
         temperature: 78
@@ -26,7 +27,7 @@ export default function Weather() {
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <img
+                    <img style={{ borderWidth: '10px' }}
                         src={weatherInfo.imgUrl}
                         alt={weatherInfo.description}
                         className="weather-img"

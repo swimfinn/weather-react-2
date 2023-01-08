@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-image: url("sunset.jpg");
+  background-image: url("./images/sunset.jpg");
   background-repeat: repeat-y;
   background-size: cover;
 }
@@ -9,8 +9,24 @@ li {
   list-style-type: none;
 }
 
+img {
+  border-width: 10px;
+}
+
+.weather-img {
+  position: relative;
+  border: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  bottom: 170px;
+  right: -300px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
 .cityInfo {
   font-size: 24px;
+  font-weight: bold;
   position: relative;
   top: -38px;
   color: grey;
@@ -18,46 +34,45 @@ li {
 
 .dateInfo {
   position: relative;
+  font-weight: bold;
   top: -45px;
   left: -40px;
 }
 
 .descriptionInfo {
   position: relative;
+  font-weight: bold;
   top: -45px;
   left: -40px;
 }
 
-.weather-img {
-  position: relative;
-  width: 150px;
-  bottom: 170px;
-  right: -300px;
-}
-
 .temp,
 .units {
-  font-size: 64px;
   position: relative;
-  top: -225px;
 }
 
 .temp {
   font-weight: 900px;
+  font-size: 64px;
+  top: -70px;
+  left: -75px;
 }
 
 .units {
   font-size: 24px;
-  top: -245px;
+  top: -95px;
+  left: -70px;
 }
 
 .otherInfo {
   position: relative;
-  top: -290px;
-  right: -272px;
+  top: -160px;
+  right: -232px;
+  font-weight: bold;
 }
 
 .Address {
   position: relative;
-  top: -280px;
+  font-weight: bold;
+  top: 30px;
 }
