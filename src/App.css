@@ -24,6 +24,7 @@ img {
 .form-control {
   height: 38px;
   width: 300px;
+  border-width: 2px;
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
   background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
   -webkit-background-clip: text;
@@ -35,21 +36,24 @@ img {
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
 }
 
-.search-button {
+.SearchBtn {
   position: relative;
-  left: 300px;
-  top: -38px;
+  left: 198px;
+  top: -574px;
   padding-left: 15px;
   padding-right: 15px;
   width: 20%;
+  border-width: 2px;
 }
-.current-button {
+.CurrentBtn {
   position: relative;
-  right: -305px;
-  top: -38px;
+  right: -410px;
+  top: -574px;
   padding-left: 15px;
   padding-right: 15px;
   width: 20%;
+  border-width: 2px;
+  border-radius: 10%;
 }
 
 h1,

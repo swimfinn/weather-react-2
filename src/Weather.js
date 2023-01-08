@@ -27,7 +27,7 @@ export default function Weather() {
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <img style={{ borderWidth: '10px' }}
+                    <img
                         src={weatherInfo.imgUrl}
                         alt={weatherInfo.description}
                         className="weather-img"

@@ -1,0 +1,14 @@
+button {
+  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
+  border-width: 7px;
+  background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: -70px;
+}

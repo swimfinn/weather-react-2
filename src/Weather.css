@@ -19,7 +19,7 @@ img {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  bottom: 170px;
+  bottom: 125px;
   right: -300px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
@@ -28,21 +28,21 @@ img {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  top: -38px;
+  top: -5px;
   color: grey;
 }
 
 .dateInfo {
   position: relative;
   font-weight: bold;
-  top: -45px;
+  top: -15px;
   left: -40px;
 }
 
 .descriptionInfo {
   position: relative;
   font-weight: bold;
-  top: -45px;
+  top: -20px;
   left: -40px;
 }
 
@@ -54,19 +54,19 @@ img {
 .temp {
   font-weight: 900px;
   font-size: 64px;
-  top: -70px;
+  top: -50px;
   left: -75px;
 }
 
 .units {
   font-size: 24px;
-  top: -95px;
+  top: -75px;
   left: -70px;
 }
 
 .otherInfo {
   position: relative;
-  top: -160px;
+  top: -120px;
   right: -232px;
   font-weight: bold;
 }
@@ -74,5 +74,5 @@ img {
 .Address {
   position: relative;
   font-weight: bold;
-  top: 50px;
+  top: 90px;
 }
