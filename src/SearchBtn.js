@@ -1,7 +1,8 @@
 import React from "react";
 import useSound from "use-sound";
 import Scanner from "./audio/scanner.mp3";
-import "./App.css"
+import "./SearchBtn.css";
+
 
 const SearchBtn = () => {
     const [isPlaying, setIsPlaying] = React.useState(false);
@@ -21,10 +22,9 @@ const SearchBtn = () => {
     }
     return (
         <>
-            <button type="button" className="SearchBtn btn shadow-sm" onClick={togglePlay}><b>Search</b></button>
+            <button type="submit" className="SearchBtn btn shadow-sm" onClick={togglePlay}><b>Search</b></button>
         </>
     );
-
 };
 
 export default SearchBtn;

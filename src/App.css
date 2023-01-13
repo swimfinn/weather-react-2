@@ -9,6 +9,12 @@ img {
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
 }
 
+.container {
+  display: block;
+  position: relative;
+  left: -45px;
+}
+
 .card {
   width: 570px;
   height: 430px;
@@ -19,41 +25,6 @@ img {
   border-width: 10px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
-}
-
-.form-control {
-  height: 40px;
-  width: 300px;
-  border-width: 2px;
-  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
-  background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.btn {
-  background-color: #343344;
-  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
-  border-radius: 0%;
-}
-
-.SearchBtn,
-.CurrentBtn {
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 20%;
-  border-width: 2.5px;
-}
-
-.SearchBtn {
-  left: 200px;
-  top: -575px;
-}
-
-.CurrentBtn {
-  right: -410px;
-  top: -575px;
 }
 
 h1,

@@ -1,53 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
+import SearchBtn from "./SearchBtn";
+import WeatherInfo from "./WeatherInfo";
+import CurrentForecast from "./CurrentForecast";
+import axios from "axios";
 import "./App.css";
 import "./Weather.css";
-import Sunny from "./images/sunny.jpg"
 
-export default function Weather() {
-    let weatherInfo = {
-        city: "Wenatchee",
-        date: "Saturday, 7:12 p.m.",
-        description: "Sunny",
-        imgUrl: (Sunny),
-        humidity: 23,
-        wind: 5,
-        temperature: 78
-    };
+export default function Weather(props) {
+    const [weatherData, setWeatherData] = useState({ ready: false });
+    const [city, setCity] = useState(props.defaultCity);
 
-    return (
-        <div className="weatherInfo">
-            <h1 className="cityInfo">{weatherInfo.city}</h1>
-            <ul>
-                <li className="dateInfo">
-                    {weatherInfo.date}
-                </li>
-                <li className="descriptionInfo">
-                    {weatherInfo.description}
-                </li>
-            </ul>
-            <div className="row">
-                <div className="col-6">
-                    <img
-                        src={weatherInfo.imgUrl}
-                        alt={weatherInfo.description}
-                        className="weather-img"
-                    />
-                    <span className="temp">{weatherInfo.temperature}</span>
-                    <span className="units">°F</span>
-                </div>
+    function handleResponse(response) {
+        console.log(response.data);
+        setWeatherData({
+            ready: true,
+            coordinates: response.data.coord,
+            temperature: response.data.main.temp,
+            humidity: response.data.main.humidity,
+            date: new Date(response.data.dt * 1000),
+            description: response.data.weather[0].description,
+            icon: response.data.weather[0].icon,
+            wind: response.data.wind.speed,
+            city: response.data.name
+        });
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
+    }
+
+    function handleCityChange(event) {
+        setCity(event.target.value);
+    }
+
+    function search() {
+        const apiKey = "3a8d7f059fc61ac00591426445cb607a";
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}$units=imperial`;
+        axios.get(apiUrl).then(handleResponse);
+    }
+
+    if (weatherData.ready) {
+        return (
+            <div class="searchEngine mb-3">
+                <form className="Search-bar" onSubmit={handleSubmit}>
+                    <input type="text" className="Form-control shadow-sm" onChange={handleCityChange} autofocus="on" placeholder="Type a city..." />
+                    <SearchBtn />
+                </form>
+                <>
+                    <WeatherInfo data={weatherData} />
+                    <CurrentForecast coordinates={weatherData.coordinates} />
+                </>
             </div>
-            <div className="col-6">
-                <div className="otherInfo">
-                    <ul>
-                        <li>
-                            Humidity: {weatherInfo.humidity}%
-                    </li>
-                        <li>
-                            Wind: {weatherInfo.wind} mph
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    );
+        );
+    } else {
+        search();
+        return "Loading...";
+    }
 }
