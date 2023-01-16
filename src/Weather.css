@@ -12,16 +12,35 @@ li {
 h1,
 li,
 b,
-span {
+span,
+.Forecast-description,
+.Forecast-days {
   background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
-.Weather .searchEngine {
+.Forecast-days,
+.Forecast-description,
+.weather-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Forecast-description {
+  font-size: 12px;
+}
+
+.Search-bar,
+.SearchEngine,
+.Form-control {
   height: 40px;
   width: 300px;
+  position: relative;
+  left: 7px;
+  top: -7px;
   border-width: 2px;
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
   background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
@@ -31,70 +50,63 @@ span {
 
 .weather-img {
   position: relative;
-  border: 10px;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  bottom: 125px;
-  right: -300px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  bottom: 90px;
+  right: -220px;
+}
+
+.DateInfo,
+.DescriptionInfo,
+.OtherInfo {
+  font-size: 18px;
 }
 
 .CityInfo {
   font-size: 24px;
   font-weight: bold;
   position: relative;
-  top: -5px;
+  top: 50px;
+  right: -15px;
   color: grey;
 }
 
 .DateInfo {
   position: relative;
   font-weight: bold;
-  top: -15px;
-  left: -40px;
+  top: 40px;
+  left: -25px;
 }
 
 .DescriptionInfo {
   position: relative;
   font-weight: bold;
-  top: -20px;
-  left: -40px;
-}
-
-.Temp,
-.Fahrenheit,
-.Celsius,
-.Divider {
-  position: relative;
-}
-
-.Temp {
-  font-weight: 900px;
-  font-size: 64px;
-  top: -50px;
-  left: -75px;
-}
-
-.Fahrenheit,
-.Celsius,
-.Divider {
-  font-size: 24px;
-  top: -75px;
-  left: -70px;
+  top: 40px;
+  left: -25px;
 }
 
 .OtherInfo {
   position: relative;
-  top: -120px;
-  right: -232px;
-  font-weight: bold;
+  top: -203px;
+  right: -325px;
+}
+
+.WeatherTemp,
+.Fahrenheit,
+.Celsius,
+.Divider {
+  position: relative;
+}
+
+.WeatherTemp {
+  font-weight: 900px;
+  font-size: 45px;
+  top: -100px;
+  left: 220px;
 }
 
 .Address {
   position: relative;
   font-weight: bold;
-  top: 350px;
+  top: -120px;
   left: -30px;
 }
 
@@ -104,21 +116,38 @@ span {
   border-radius: 0%;
 }
 
-.SearchBtn,
 .CurrentBtn {
+  padding: 15px;
+}
+
+.Forecast-temperatures {
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 20%;
-  border-width: 2.5px;
+  font-weight: 16px;
+  top: -150px;
+  right: -35px;
 }
 
-.SearchBtn {
-  left: 200px;
-  top: -575px;
+.Forecast-weather,
+.weather-icon,
+.Forecast-description,
+.Forecast-days {
+  position: relative;
 }
 
-.CurrentBtn {
-  right: -410px;
-  top: -575px;
+.weather-icon {
+  top: -180px;
+  right: -35px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.Forecast-days {
+  top: -110px;
+  right: -35px;
+}
+
+.Forecast-description {
+  position: relative;
+  top: -150px;
+  right: -35px;
 }

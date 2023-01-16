@@ -5,10 +5,12 @@ import CurrentForecast from "./CurrentForecast";
 import axios from "axios";
 import "./App.css";
 import "./Weather.css";
+import "./SearchBtn.css";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
     const [city, setCity] = useState(props.defaultCity);
+
 
     function handleResponse(response) {
         console.log(response.data);
@@ -36,7 +38,7 @@ export default function Weather(props) {
 
     function search() {
         const apiKey = "3a8d7f059fc61ac00591426445cb607a";
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}$units=imperial`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
         axios.get(apiUrl).then(handleResponse);
     }
 

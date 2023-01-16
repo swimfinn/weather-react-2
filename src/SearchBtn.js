@@ -1,13 +1,14 @@
 import React from "react";
 import useSound from "use-sound";
-import Scanner from "./audio/scanner.mp3";
+import Lightning from "./audio/lightning.mp3";
 import "./SearchBtn.css";
+
 
 
 const SearchBtn = () => {
     const [isPlaying, setIsPlaying] = React.useState(false);
 
-    const [playSearchBtn, { pause }] = useSound(Scanner, {
+    const [playSearchBtn, { pause }] = useSound(Lightning, {
         onplay: () => setIsPlaying(true),
         onend: () => setIsPlaying(false),
     });
@@ -20,10 +21,15 @@ const SearchBtn = () => {
         }
         setIsPlaying(!isPlaying);
     }
+
+    function helpSubmit(event) {
+        event.defaultPrevent();
+    }
+
     return (
-        <>
-            <button type="submit" className="SearchBtn btn shadow-sm" onClick={togglePlay}><b>Search</b></button>
-        </>
+        <div className="Search-button">
+            <button type="submit" onSubmit={helpSubmit} className="SearchBtn btn shadow-sm" onClick={togglePlay}><b>Search</b></button>
+        </div>
     );
 };
 

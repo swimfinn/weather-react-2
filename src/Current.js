@@ -1,7 +1,7 @@
 import React from "react";
 import useSound from "use-sound";
 import Lightning from "./audio/lightning.mp3";
-import "./App.css"
+import "./Weather.css";
 
 const Current = () => {
     const [isPlaying, setIsPlaying] = React.useState(false);

@@ -2,6 +2,7 @@ import React from "react";
 import CurrentDate from "./CurrentDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
+import "./Weather.css";
 
 export default function WeatherInfo(props) {
     return (
@@ -15,22 +16,22 @@ export default function WeatherInfo(props) {
                     {props.data.description}
                 </li>
             </ul>
-            <div className="row">
+            <div className="row Forecast-Weather">
                 <div className="col-6">
-                    <div>
-                        <WeatherIcon code={props.data.icon} size={52} />
+                    <div className="weather-img">
+                        <WeatherIcon code={props.data.icon} size={100} />
                     </div>
                     <WeatherTemp fahrenheit={props.data.temperature} />
                 </div>
             </div>
             <div className="col-6">
-                <div className="otherInfo">
+                <div className="OtherInfo">
                     <ul>
                         <li>
                             Humidity: {props.data.humidity}%
                     </li>
                         <li>
-                            Wind: {props.data.wind} mph
+                            Wind: {Math.round(props.data.wind)} mph
                     </li>
                     </ul>
                 </div>
