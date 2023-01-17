@@ -14,7 +14,10 @@ li,
 b,
 span,
 .Forecast-description,
-.Forecast-days {
+.Forecast-days,
+.Search-bar,
+.SearchEngine,
+.Form-control {
   background: -webkit-linear-gradient(rgb(240, 1, 168), rgb(252, 82, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,7 +69,6 @@ span,
   position: relative;
   top: 50px;
   right: -15px;
-  color: grey;
 }
 
 .DateInfo {
@@ -106,11 +108,12 @@ span,
 .Address {
   position: relative;
   font-weight: bold;
-  top: -120px;
+  top: -160px;
   left: -30px;
 }
 
-.btn {
+.btn,
+.ReactAnimatedWeather {
   background-color: #343344;
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
 }

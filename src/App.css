@@ -2,13 +2,6 @@ body {
   padding: 40px;
 }
 
-img {
-  border-width: 10px;
-  border-width: 10px;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
-  border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
-}
-
 .container {
   display: block;
   position: relative;
