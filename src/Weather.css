@@ -113,11 +113,6 @@ span,
 .btn {
   background-color: #343344;
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
-  border-radius: 0%;
-}
-
-.CurrentBtn {
-  padding: 15px;
 }
 
 .Forecast-temperatures {

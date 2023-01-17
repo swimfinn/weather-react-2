@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SearchBtn from "./SearchBtn";
 import WeatherInfo from "./WeatherInfo";
 import CurrentForecast from "./CurrentForecast";
+import CurrentLocation from "./CurrentLocation";
 import axios from "axios";
 import "./App.css";
 import "./Weather.css";
@@ -48,6 +49,7 @@ export default function Weather(props) {
                 <form className="Search-bar" onSubmit={handleSubmit}>
                     <input type="text" className="Form-control shadow-sm" onChange={handleCityChange} autofocus="on" placeholder="Type a city..." />
                     <SearchBtn />
+                    <CurrentLocation />
                 </form>
                 <>
                     <WeatherInfo data={weatherData} />

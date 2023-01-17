@@ -1,7 +1,6 @@
 .SearchBtn {
   background-color: #343344;
   border-image: linear-gradient(to right, rgb(240, 1, 168), rgb(252, 82, 4)) 1;
-  border-radius: 0%;
   border-width: 2.5px;
   position: relative;
   top: -30px;
@@ -12,4 +11,12 @@
   position: relative;
   top: -17px;
   right: -103px;
+}
+
+.CurrentBtn {
+  border-width: 2.5px;
+  border-radius: 3px;
+  position: relative;
+  top: -87px;
+  left: 420px;
 }

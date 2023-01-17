@@ -1,6 +1,6 @@
 import React from "react";
 import useSound from "use-sound";
-import Lightning from "./audio/lightning.mp3";
+import Scanner from "./audio/scanner.mp3";
 import "./SearchBtn.css";
 
 
@@ -8,7 +8,7 @@ import "./SearchBtn.css";
 const SearchBtn = () => {
     const [isPlaying, setIsPlaying] = React.useState(false);
 
-    const [playSearchBtn, { pause }] = useSound(Lightning, {
+    const [playSearchBtn, { pause }] = useSound(Scanner, {
         onplay: () => setIsPlaying(true),
         onend: () => setIsPlaying(false),
     });
