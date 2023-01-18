@@ -7,7 +7,6 @@ import PartiallySunny from "./images/partiallySunny.jpg";
 import CloudyNight from "./images/cloudyNight.jpg";
 import Cloudy from "./images/cloudy.jpg";
 import Rain from "./images/rain.jpg";
-import Sleet from "./images/sleet.jpg";
 import Snow from "./images/snow.jpg";
 import Fog from "./images/fog.jpg"
 
@@ -88,39 +87,39 @@ export default function WeatherIcon(props) {
 
         return (
             <div className="Rain">
-                <img src={Rain} alt="SCloudy" />
+                <img src={Rain} alt="Rainy" />
             </div>
         );
 
     if (props.code === "10d")
 
         return (
-            <div className="Cloudy">
-                <img src={Cloudy} alt="Cloudy" />
+            <div className="Rain">
+                <img src={Rain} alt="Rainy" />
             </div>
         );
 
     if (props.code === "10n")
 
         return (
-            <div className="Cloudy">
-                <img src={Cloudy} alt="Cloudy" />
+            <div className="Rain">
+                <img src={Rain} alt="Rainy" />
             </div>
         );
 
     if (props.code === "11d")
 
         return (
-            <div className="Sleet">
-                <img src={Sleet} alt="Sleet" />
+            <div className="Rain">
+                <img src={Rain} alt="Rainy" />
             </div>
         );
 
     if (props.code === "11n")
 
         return (
-            <div className="Sleet">
-                <img src={Sleet} alt="Sleet" />
+            <div className="Rain">
+                <img src={Rain} alt="Rainy" />
             </div>
         );
 
