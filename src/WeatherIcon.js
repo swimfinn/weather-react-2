@@ -87,8 +87,8 @@ export default function WeatherIcon(props) {
     if (props.code === "09n")
 
         return (
-            <div className="Cloudy">
-                <img src={Cloudy} alt="SCloudy" />
+            <div className="Rain">
+                <img src={Rain} alt="SCloudy" />
             </div>
         );
 
