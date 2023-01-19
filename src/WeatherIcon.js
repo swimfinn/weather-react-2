@@ -1,6 +1,5 @@
 import React from "react";
 import "./Weather.css";
-import "./WeatherIcon.css";
 import Sun from "./images/sun.jpg";
 import ClearNight from "./images/clearNight.png";
 import PartiallySunny from "./images/partiallySunny.jpg";
@@ -11,6 +10,7 @@ import Snow from "./images/snow.jpg";
 import Fog from "./images/fog.jpg"
 
 export default function WeatherIcon(props) {
+
     if (props.code === "01d")
 
         return (
@@ -154,6 +154,7 @@ export default function WeatherIcon(props) {
                 <img src={Fog} alt="Foggy" />
             </div>
         );
+
 }
 
 
