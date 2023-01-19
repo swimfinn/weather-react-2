@@ -15,7 +15,7 @@ li {
 }
 
 img {
-  max-width: 64px;
+  max-width: 60px;
 }
 
 .WeatherImg,
@@ -122,7 +122,7 @@ img {
 .Address {
   position: relative;
   font-weight: bold;
-  top: -100px;
+  top: -130px;
   left: -30px;
 }
 
