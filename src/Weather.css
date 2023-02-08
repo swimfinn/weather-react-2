@@ -24,7 +24,7 @@ img {
 }
 
 .WeatherImg {
-  top: -190px;
+  top: -180px;
   right: -38px;
 }
 
@@ -108,8 +108,14 @@ img {
 .WeatherTemp,
 .Fahrenheit,
 .Celsius,
-.Divider {
+.Divider,
+.unit {
   position: relative;
+}
+
+.unit {
+  font-size: 24px;
+  top: -12px;
 }
 
 .WeatherTemp {
@@ -134,7 +140,7 @@ img {
 .Forecast-temperatures {
   position: relative;
   font-weight: 16px;
-  top: -150px;
+  top: -140px;
   right: -35px;
 }
 
@@ -145,12 +151,12 @@ img {
 }
 
 .Forecast-days {
-  top: -90px;
+  top: -80px;
   right: -35px;
 }
 
 .Forecast-description {
   position: relative;
-  top: -150px;
+  top: -140px;
   right: -35px;
 }
